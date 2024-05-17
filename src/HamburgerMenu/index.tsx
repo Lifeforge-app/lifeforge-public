@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Menu, Transition } from "@headlessui/react";
 import { Icon } from "@iconify/react";
 import React from "react";
@@ -48,6 +49,7 @@ function HamburgerMenu({
         leave="transition duration-75 ease-out"
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="transform scale-95 opacity-0"
+        // @ts-ignore
         className="absolute right-0 top-4 z-50"
         afterLeave={onClose}
       >

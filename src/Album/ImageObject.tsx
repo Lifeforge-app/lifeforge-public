@@ -2,7 +2,6 @@
 /* eslint-disable @typescript-eslint/indent */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Icon } from "@iconify/react";
-import { cookieParse } from "pocketbase";
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Zoom from "react-medium-image-zoom";

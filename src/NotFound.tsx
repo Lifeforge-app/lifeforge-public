@@ -1,9 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 function NotFound(): React.ReactElement {
-  const navigate = useNavigate();
-
   return (
     <div className="flex-center flex h-full w-full flex-col gap-6">
       <h1 className="text-[10rem] text-lime-500">;-;</h1>
