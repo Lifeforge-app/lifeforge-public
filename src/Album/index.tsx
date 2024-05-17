@@ -43,9 +43,9 @@ function PhotosAlbumGallery(): React.ReactElement {
                     <div className="flex-center flex h-14 w-14 shrink-0 rounded-md bg-zinc-200 shadow-md dark:bg-zinc-700/50">
                       {albumData.cover !== "" ? (
                         <img
-                          src={`${
-                            import.meta.env.VITE_POCKETBASE_ENDPOINT
-                          }/api/files/${albumData.cover}?thumb=0x300`}
+                          src={`${import.meta.env.VITE_API_HOST}/media/${
+                            albumData.cover
+                          }?thumb=0x300`}
                           alt=""
                           className="h-full w-full rounded-md object-cover"
                         />
@@ -125,11 +125,9 @@ function PhotosAlbumGallery(): React.ReactElement {
                     <Gallery
                       targetRowHeight={200}
                       photos={photos.map((image) => ({
-                        src: `${
-                          import.meta.env.VITE_POCKETBASE_ENDPOINT
-                        }/api/files/${image.collectionId}/${image.photoId}/${
-                          image.image
-                        }?thumb=0x300`,
+                        src: `${import.meta.env.VITE_API_HOST}/media/${
+                          image.collectionId
+                        }/${image.photoId}/${image.image}?thumb=0x300`,
                         width: image.width / 20,
                         height: image.height / 20,
                         key: image.id,
