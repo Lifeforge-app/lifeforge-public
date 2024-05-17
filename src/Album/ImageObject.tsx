@@ -146,12 +146,7 @@ function ImageObject({
             <CustomZoomContent {...props} data={details} />
           )}
           zoomImg={{
-            src: photo.src
-              .split("?")[0]
-              .replace(
-                import.meta.env.VITE_API_HOST + "/media",
-                import.meta.env.VITE_POCKETBASE_ENDPOINT + "/api/files"
-              ),
+            src: photo.src.split("?")[0],
           }}
         >
           <LazyLoadImage
