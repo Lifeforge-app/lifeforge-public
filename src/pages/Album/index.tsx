@@ -6,10 +6,10 @@ import moment from "moment";
 import React, { useEffect } from "react";
 import Gallery from "react-photo-gallery";
 import { useNavigate, useParams } from "react-router";
-import useFetch from "../hooks/useFetch";
+import useFetch from "../../hooks/useFetch";
 import { IPhotoAlbumEntryItem, IPhotosAlbum } from "./interface";
-import APIComponentWithFallback from "../APIComponentWithFallback";
-import ModuleWrapper from "../ModuleWrapper";
+import APIComponentWithFallback from "../../components/APIComponentWithFallback";
+import ModuleWrapper from "../../components/ModuleWrapper";
 import ImageObject from "./ImageObject";
 
 function PhotosAlbumGallery(): React.ReactElement {

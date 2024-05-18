@@ -7,9 +7,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Zoom from "react-medium-image-zoom";
 import { toast } from "react-toastify";
 import { type IPhotosEntry } from "./interface";
-import useFetch from "../hooks/useFetch";
-import MenuItem from "../HamburgerMenu/MenuItem";
-import HamburgerMenu from "../HamburgerMenu";
+import useFetch from "../../hooks/useFetch";
+import MenuItem from "../../components/HamburgerMenu/MenuItem";
+import HamburgerMenu from "../../components/HamburgerMenu";
 
 function forceDown(url: string, filename: string): void {
   fetch(url)
